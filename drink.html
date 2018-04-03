@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Dessert Viola</title>
+<link href="menuStyle.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<style type="text/css">
+header {
+	width: 100%;
+	height: 80vh;
+	background: url(images/iced_matcha_latte_header&menu&recipe.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+</style>
+
+</head>
+
+	
+<body>
+	
+	<div class="wrapper">
+		
+		<header>
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo">
+					Dessert Viola
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="dessert.html">Dessert</a></li>
+						<li><a href="drink.html">Drink</a></li>
+						<li><a href="about_me.html">About Me</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="content">
+
+			<!--------------------------------Drink---Drink---Drink---Drink---Drink-------------------------------->
+			<h1>Drink</h1>
+			<!-- Gallery Row 1 Start -->
+			<section class="one-third">
+				<a href="double_layered_tropical_smoothie.html"><img src="images/double_layered_tropical_smoothie_menu&recipe.png" alt="Double Layered Tropical Smoothie" title="Double Layered Tropical Smoothie"></a>
+				<a href="double_layered_tropical_smoothie.html"><div class="caption">Double Layered Tropical Smoothie</div></a>
+			</section>
+			<section class="one-third">
+				<a href="healthy_green_smoothie.html"><img src="images/healthy_green_smoothie_menu&recipe.jpg" alt="Healthy Green Smoothie" title="Healthy Green Smoothie"></a>
+				<a href="healthy_green_smoothie.html"><div class="caption">Healthy Green Smoothie</div></a>
+			</section>
+			<section class="one-third">
+				<a href="roasted_fresh_milk_tea.html"><img src="images/roasted_fresh_milk_tea_menu&recipe.jpg" alt="Roasted Fresh Milk Tea" title="Roasted Fresh Milk Tea"></a>
+				<a href="roasted_fresh_milk_tea.html"><div class="caption">Roasted Fresh Milk Tea</div></a>
+			</section>
+			<!-- Gallery Row 1 End -->
+
+			<!-- Gallery Row 2 Start -->
+			<section class="one-third">
+				<a href="iced_matcha_latte.html"><img src="images/iced_matcha_latte_header&menu&recipe.jpg" alt="Iced Matcha Latte" title="Iced Matcha Latte"></a>
+				<a href="iced_matcha_latte.html"><div class="caption">Iced Matcha Latte</div></a>
+			</section>
+			<!-- Gallery Row 2 End -->
+			<!----------------------Drink End---Drink End---Drink End---Drink End---Drink End---------------------->
+			
+		</div>
+		
+	</div>
+	
+	<script type="text/javascript">
+		// Menu-toggle button
+		$(document).ready(function() {
+			$(".menu-icon").on("click", function() {
+				$("nav ul").toggleClass("showing");
+			});
+		});
+		
+		// Scrolling Effect
+		$(window).on("scroll", function() {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+            else {
+				$('nav').removeClass('black');
+            }
+		})
+	</script>
+	
+</body>
+</html>

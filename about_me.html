@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Dessert Viola</title>
+<link href="menuStyle.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<style type="text/css">
+header {
+	width: 100%;
+	height: 80vh;
+	background: url(images/elizabeth.JPG) no-repeat 50% 50%;
+	background-size: cover;
+}
+</style>
+
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		
+		<header>
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo">
+					Dessert Viola
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="dessert.html">Dessert</a></li>
+						<li><a href="drink.html">Drink</a></li>
+						<li><a href="about_me.html">About Me</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="content">
+			
+			<h1>About Me</h1>
+			<p>Hi, I’m Elizabeth!</p>
+			<p>I’m a Chinese girl in Canada.</p>
+			<p>I love everything about food: cooking, eating and taking beautiful pictures of them. I am passionate about discovering yummy desserts and recipes.</p>
+			<p>I love the irresistible smell coming out of the oven. I love the sound of cooking. And I love the smile on people’s face when enjoying a beautiful dish.</p>
+			<p>Here, I would like to share the recipes I collect, modified or created. To share the joy of cooking and the love of food!</p>
+			<p>Ps. The name of Dessert Viola comes from the Chinese character “堇”. It is the pen name of my favorite author.</p>
+		</div>
+		
+	</div>
+	
+	<script type="text/javascript">
+		// Menu-toggle button
+		$(document).ready(function() {
+			$(".menu-icon").on("click", function() {
+				$("nav ul").toggleClass("showing");
+			});
+		});
+		
+		// Scrolling Effect
+		$(window).on("scroll", function() {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+            else {
+				$('nav').removeClass('black');
+            }
+		})
+	</script>
+	
+</body>
+</html>
