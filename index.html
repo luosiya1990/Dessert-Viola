@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Dessert Viola</title>
+<link href="indexStyle.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/fullclip.js"></script>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+
+	
+		<header>
+			<!-----------navigation bar----navigation bar----navigation bar----------->
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo">
+					Dessert Viola
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="dessert.html">Dessert</a></li>
+						<li><a href="drink.html">Drink</a></li>
+						<li><a href="about_me.html">About Me</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+			
+		<!-----------slideshow container----slideshow container----slideshow container----------->
+		<section class="container">
+			<div class="fullBackground"></div>
+			<h2 class="caption">eat, bake, and love</h2>
+		</section>
+	</div>
+	
+	<script>
+		// Menu-toggle button
+		$(document).ready(function() {
+			$(".menu-icon").on("click", function() {
+				$("nav ul").toggleClass("showing");
+			});
+		});
+		
+		// Scrolling Effect
+		$(window).on("scroll", function() {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+            else {
+				$('nav').removeClass('black');
+            }
+		})
+		
+    	$('.fullBackground').fullClip({
+      		images: ['images/mango_strawberry_crepe_cake_menu.jpeg', 'images/strawberry_panna_cotta_menu&recipe.jpeg', 'images/no_bake_matcha_chestnut_cheesecake_menu.jpg'],
+      		transitionTime: 2000,
+      		wait: 5000
+    	});
+    </script>
+	
+</body>
+</html>

@@ -1,0 +1,138 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",sans-serif;
+	font-weight: normal;
+}
+
+header {
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	background-size: cover;
+}
+
+.logo {
+	line-height: 60px;
+	position: fixed;
+	float: left;
+	margin: 16px 46px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	line-height: 60px;
+	z-index: 1;
+	display: block;
+}
+ 
+nav ul {
+	line-height: 60px;
+	list-style: none;
+	background: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+	padding-right: 40px;
+ 	transition: 0.5s;
+}
+ 
+nav.black ul {
+	background: pink;
+}
+ 
+nav ul li {
+	display: inline-block;
+	padding: 16px 30px;
+}
+ 
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-style: oblique;
+}
+ 
+.menu-icon {
+	line-height: 60px;
+	width: 100%;
+	background: pink; /*#000;*/
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+ 
+@media(max-width: 786px) {
+ 
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+ 
+      nav ul {
+            max-height: 0px;
+            background: #FFC0CB;
+      }
+ 
+      nav.pink ul {
+            background: #FFC0CB;
+      }
+ 
+      .showing {
+            max-height: 34em;
+      }
+ 
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+ 
+      .menu-icon {
+            display: block;
+      }
+ 
+}
+
+.fullBackground {
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.caption {
+	font-family: Papyrus, fantasy, "Brush Script MT", cursive, Helvetica, Arial, "sans-serif";
+	font-size: 37pt;
+	text-transform: uppercase;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.caption:after {
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background: #00bbeb;
+	display: inline-block;
+	margin: 0 0 -2px;
+}
